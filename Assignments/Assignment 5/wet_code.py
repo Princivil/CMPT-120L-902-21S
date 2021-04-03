@@ -17,43 +17,11 @@ def saturdays_bank_transactions(transactions) -> Tuple[float, float]:
         if i == 0 or i==4 or i==5:
             checking += (transations[i] * 0.85)
             savings += (transations[i] * 0.15)
-        #elif i == 4:
-            #checking += (transations[i] * 0.85)
-           # savings += (transations[i] * 0.15)
-        #elif i == 5:
-           # checking += (transations[i] * 0.85)
-           # savings += (transations[i] * 0.15)
         else:
             checking += (transactions[i])
     return checking, savings
 
-    #checking += (transations[0] * 0.85)
-    #savings += (transations[0] * 0.15)
-
-    #checking += transations[1]
     
-    #checking += transations[2]
-    
-    #checking += transations[3]
-
-    #checking += (transations[4] * 0.85)
-    #savings += (transations[4] * 0.15)
-    
-    #checking += (transations[5] * 0.85)
-    #savings += (transations[5] * 0.15)
-
-    #checking += transations[6]
-    
-    #checking += transations[7]
-    
-    #checking += transations[8]
-    
-    #checking += transations[9]
-    
-    #checking += transations[10]
-
-    #return checking, savings
-
 if __name__ == "__main__":
     transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
     new_balance = saturdays_bank_transactions(transations)
