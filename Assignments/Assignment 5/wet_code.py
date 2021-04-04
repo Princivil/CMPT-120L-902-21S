@@ -14,15 +14,15 @@ def saturdays_bank_transactions(transactions) -> Tuple[float, float]:
 
 
     for i in range(len(transactions)):
-        if i == 0 or i==4 or i==5:
-            checking += (transations[i] * 0.85)
-            savings += (transations[i] * 0.15)
-        else:
-            checking += (transactions[i])
+        if transactions[i]>=0 :
+            checking += (transactions[i] * 0.85)
+            savings += (transactions[i] * 0.15)
+            continue
+        checking+=transactions[i]
     return checking, savings
 
     
 if __name__ == "__main__":
-    transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
-    new_balance = saturdays_bank_transactions(transations)
+    transactions = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
+    new_balance = saturdays_bank_transactions(transactions)
     print("Your new checking balance is:", '${:.2f}'.format(round(new_balance[0], 2)), "\nYour new savings balance is: ", '${:.2f}'.format(round(new_balance[1], 2)))
