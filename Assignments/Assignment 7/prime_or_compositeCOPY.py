@@ -9,12 +9,11 @@ def prime_or_composite(number):
     if (number>=1):
         for i in range(2,number):
                 if (number%i)==0:
-                    print(number,'is Composite')
-                    break
+                    return 'Composite'
         else:
-            print(number,'is Prime')
+            return'Prime'
     else:
-        print(number,'is Neither')
+        return 'Neither'
 
 if __name__ == "__main__":
     numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201,-7]
