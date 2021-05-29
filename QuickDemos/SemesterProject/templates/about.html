@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Foxy Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"/>
+	
+</head>
+<body style="background-color:black">
+
+<!--Navbar-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 navbar">
+			<a href="index.html" class="logo navbar-brand text-white offset-md-2">MEOW</a>
+			<ul class="nav">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+				<li class="nav-item"><a href="kittytingz.html" class="nav-link">Kitty Tingz</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<section class="about-section container" style="height:600px;">
+	<div class="container-fluid">
+		<div class="row">
+    		<div class="col-md-7">
+    			<img src="static/red.jpg" class="img-fluid" alt="Camera filter">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-caption">
+	<div class = "content" style="text-align:justify; margin:-540px auto; width:1100px;padding-left:750px;color:white;">
+                <h2 style="color:red;">About Me</h2>
+                <p>I was rescued back in August 2014 when my previous owner couldn’t take care of me.
+				<p>Here’s how that story went:</p>
+				<p>My mom originally wanted me but the owner said that I was given away already. In defeat, my mom settled for my fluffy nincompoop brother/cousin, Batman, instead. Long story short, the owner came clean and realized she didn’t have the capacity to take care of me since she already had a zoo. My mom was ecstatic and took me home to my now forever family.</p>
+				<p>I have a big brother, Tigger, who doesn’t like me very much but he tolerates me. There’s Onyx who is an old lady who doesn’t like to play with me, along with two dodo head dogs who can’t get enough of the treats I leave behind in my litter box. I love my family and if it wasn’t for them, I don’t know what life would be like.</p>
+	</div>
+</section>
+
+<section>
+	<div class="images-container" style="height:1500px;">
+		<figure>
+		<img src="static/onyx.jpg" class="w3-circle" alt="Onyx" style="width:200px;height:auto;">
+			<figcaption style="text-align:center;">ONYX</figcaption>
+		</figure>
+		<figure>
+		<img src="static/tigger.jpg" class="w3-circle" alt="Tigger" style="width:200px;height:auto;">
+			<figcaption>TIGGER</figcaption>
+</figure>
+		<figure>
+        <img src="static/batman.jpg" class="w3-circle" alt="Batman" style="width:200px;height:auto;">
+			<figcaption>BATMAN</figcaption>
+</figure>
+		<figure>
+		<img src="static/pebbles.jpg" class="w3-circle" alt="Pebbles" style="width:200px;height:auto;">
+			<figcaption>PEBBLES</figcaption>
+</figure>
+		<figure>
+		<img src="static/bambam.jpg" class="w3-circle" alt="BamBam" style="width:200px;height:auto;">
+		<figcaption>BAM BAM</figcaption>
+		</figure>
+	</div>
+</section>
+
+</body>
+</html>
